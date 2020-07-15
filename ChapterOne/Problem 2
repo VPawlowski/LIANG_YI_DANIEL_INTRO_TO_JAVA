@@ -1,0 +1,12 @@
+package com.liang.y.daniel.chapter.one;
+
+public class LovingJava {
+    public static void main(String[] args) {
+        // Exercise demands to print "I love Java" five times.
+        System.out.println("I love Java.");
+        System.out.println("I love Java.");
+        System.out.println("I love Java.");
+        System.out.println("I love Java.");
+        System.out.println("I love Java.");
+    }
+}
