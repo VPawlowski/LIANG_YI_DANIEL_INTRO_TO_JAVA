@@ -1,0 +1,13 @@
+package com.liang.y.daniel.chapter.one;
+
+/* (Average speed in kilometers) Assume that a runner runs 24 miles in 1 hour, 40
+minutes, and 35 seconds. Write a program that displays the average speed in
+kilometers per hour. (Note 1 mile is equal to 1.6 kilometers.) */
+
+public class SpeedInKilometers {
+    public static void main(String[] args) {
+        // convert miles into kilometers: 24 * 1.6
+        // convert time into per hour standard: 1 hour = 60 minutes + 40 minutes = 100minutes + (35 seconds / 60); divide again to get in hours
+        System.out.println(24 * 1.6 / ((100 + (35 / 60.0)) / 60));
+    }
+}
