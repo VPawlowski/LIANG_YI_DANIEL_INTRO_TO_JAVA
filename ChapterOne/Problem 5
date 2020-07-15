@@ -1,0 +1,8 @@
+package com.liang.y.daniel.chapter.one;
+
+public class ComputeExpression {
+    public static void main(String[] args) {
+        // Print result of (7.5 * 6.5 - 4.5 * 3) / (47.5 - 5.5)
+        System.out.println((7.5 * 2 - 4.5 * 3) / (47.5 - 5.5));
+    }
+}
