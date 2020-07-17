@@ -36,7 +36,7 @@ public class FutureDate {
             case 6:
                 System.out.print("Saturday ");
                 break;
-            // If user enters a number outside of question paramter - program returns an error message and exits
+            // If user enters a number outside of question parameter - program returns an error message and exits
             default:
                 System.out.print("...\nERROR: Please use a number between 0 - 6");
                 System.exit(1);
