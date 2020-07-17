@@ -24,8 +24,8 @@ public class QuadraticRootFinder {
         double discriminantValue = Math.pow(valueB, 2) - 4 * valueA * valueC;
         double root;
         if (discriminantValue > 0) {
-            root = (-valueB + Math.pow(discriminantValue, 0.5)) / (2 * valueA);
             System.out.println("Equation has two roots:");
+            root = (-valueB + Math.pow(discriminantValue, 0.5)) / (2 * valueA);
             System.out.println(root);
             root = (-valueB - Math.pow(discriminantValue, 0.5)) / (2 * valueA);
             System.out.println(root);
