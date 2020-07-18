@@ -13,7 +13,7 @@ public class ComputeChange {
         System.out.println("Your amount of " + amount + "\u00A2 consists of: ");
         int numberOfDollars = amount / 100;
         // Was about to rewrite with giant if/else chain; remembered ternary operator for quicker compact code!
-        // Wondering whether there is a better way to ommit zero values...
+        // Wondering whether there is a better way to omit zero values...
         if (numberOfDollars != 0) {
             System.out.println((numberOfDollars > 1) ? numberOfDollars + " dollars" : numberOfDollars + " dollar");
         }
