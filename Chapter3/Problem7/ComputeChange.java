@@ -13,19 +13,30 @@ public class ComputeChange {
         System.out.println("Your amount of " + amount + "\u00A2 consists of: ");
         int numberOfDollars = amount / 100;
         // Was about to rewrite with giant if/else chain; remembered ternary operator for quicker compact code!
-        System.out.println((numberOfDollars > 1) ? numberOfDollars + " dollars" : numberOfDollars + " dollar");
+        // Wondering whether there is a better way to ommit zero values...
+        if (numberOfDollars != 0) {
+            System.out.println((numberOfDollars > 1) ? numberOfDollars + " dollars" : numberOfDollars + " dollar");
+        }
         amount %= 100;
         int numberOfQuarters = amount / 25;
-        System.out.println((numberOfQuarters > 1) ? numberOfQuarters + " quarters" : numberOfQuarters + " quarter");
+        if (numberOfQuarters != 0) {
+            System.out.println((numberOfQuarters > 1) ? numberOfQuarters + " quarters" : numberOfQuarters + " quarter");
+        }
         amount %= 25;
         int numberOfDimes = amount / 10;
-        System.out.println((numberOfDimes > 1) ? numberOfDimes + " dimes" : numberOfDimes + " dime");
+        if (numberOfDimes != 0) {
+            System.out.println((numberOfDimes > 1) ? numberOfDimes + " dimes" : numberOfDimes + " dime");
+        }
         amount %= 10;
         int numberOfNickels = amount / 5;
-        // You will never have more than one nickel - only one or zero (otherwise you would have a dime...)
-        System.out.println(numberOfNickels + " nickel");
+        if (numberOfNickels != 0) {
+            // You will never have more than one nickel - only one or zero (otherwise you would have a dime...)
+            System.out.println(numberOfNickels + " nickel");
+        }
         amount %= 5;
         int numberOfPennies = amount;
-        System.out.println((numberOfPennies > 1) ? numberOfPennies + " pennies" : numberOfPennies + " penny");
+        if (numberOfPennies != 0) {
+            System.out.println((numberOfPennies > 1) ? numberOfPennies + " pennies" : numberOfPennies + " penny");
+        }
     }
 }
