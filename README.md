@@ -5,4 +5,4 @@ This repository serves to document my learning process of programming with the h
 
 If you notice any mistakes, or wish to offer advice to a developping programmer - feel free to post an issue, I would highly appreciate the help!
 
-* Particularily proud of my Chapter3/Problem-13 solution - incorporated a breakless switch as a solution for calculating taxes. *
+* Particularily proud of my Chapter3/Problem-13 solution - incorporated a breakless switch as a solution for calculating taxes.
