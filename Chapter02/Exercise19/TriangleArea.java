@@ -8,7 +8,7 @@ displays its area. The formula for computing the area of a triangle is:
 
 import java.util.Scanner;
 
-public class TriangleAra {
+public class TriangleArea {
     public static void main(String[] args) {
         System.out.print("Enter the coordinates of three points separated by spaces: ");
         Scanner in = new Scanner(System.in);
