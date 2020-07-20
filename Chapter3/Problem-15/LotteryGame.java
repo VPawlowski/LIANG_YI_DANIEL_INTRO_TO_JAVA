@@ -38,7 +38,9 @@ public class LotteryGame {
             System.out.println("You have correctly guessed all the numbers in the correct order; you have won $12,000!");
         } else if (counter == 3) {
             System.out.println("You have correctly guessed all the numbers; you have won $5,000!");
-        } else if (counter == 1) {
+        } else if (counter != 0)  {
+            /* Cannot equal just 1; otherwise, if there is 2 repeating numbers (855 user vs lotto 635; will count as if
+            you did not guess a correct digit */
             System.out.println("You have guessed one correct number; you have won $2,000!");
         } else {
             System.out.println("You have not guessed any correct numbers.");
