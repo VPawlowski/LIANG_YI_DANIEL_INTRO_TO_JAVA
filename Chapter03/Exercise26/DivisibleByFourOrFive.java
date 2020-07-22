@@ -10,11 +10,9 @@ public class DivisibleByFourOrFive {
         System.out.print("Enter an integer: ");
         Scanner in = new Scanner(System.in);
         int userInput = in.nextInt();
-        System.out.print("Is " + userInput + " divisible by 4 and 5? ");
-        System.out.println(userInput % 4 == 0 && userInput % 5 == 0);
-        System.out.print("Is " + userInput + " divisible by 4 or 5? ");
-        System.out.println(userInput % 4 == 0 || userInput % 5 == 0);
-        System.out.print("Is " + userInput + " divisible by 4 or 5, but not both? ");
-        System.out.print(userInput % 4 == 0 ^ userInput % 5 == 0);
+        System.out.println("Is " + userInput + " divisible by 4 and 5? " + (userInput % 4 == 0 && userInput % 5 == 0));
+        System.out.println("Is " + userInput + " divisible by 4 or 5? " + (userInput % 4 == 0 || userInput % 5 == 0));
+        System.out.println("Is " + userInput + " divisible by 4 or 5, but not both? "
+                + (userInput % 4 == 0 ^ userInput % 5 == 0));
     }
 }
